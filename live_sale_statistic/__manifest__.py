@@ -3,7 +3,7 @@
     'name' : 'Live Sale Statistic',
     'version' : '1.1',
     'summary': 'Live Sale Statistic',
-    'author':'Mithun Turubudi ',
+    'author':'Mithun Turubudi',
     'sequence': 15,
     'description': """
 Live Sale Statistic
