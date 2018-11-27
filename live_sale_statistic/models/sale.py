@@ -34,8 +34,10 @@ class SaleOrder(models.Model):
                                         from sale_order order by 1) m 
                                      )p,
                                     (select to_char(confirmation_date, 'hh24:mi') as hour_min,sum(amount_total) as total
-                                    from sale_order where state = 'sale'
-                                    group by hour_min) n)q
+                                    from sale_order where state = 'sale' and confirmation_date >= now()::date + interval '1h'
+                                    group by hour_min
+				    union
+				    select '00:00' as hour_min,0.0 as total) n)q
                             where q.min_interval >= %s
                             AND    q.min_interval <  %s
                             group by q.min_interval)k

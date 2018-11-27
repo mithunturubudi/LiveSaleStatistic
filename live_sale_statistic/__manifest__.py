@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name' : 'Live Sale Statistic',
-    'version' : '1.1',
+    'version' : '1.2',
     'summary': 'Live Sale Statistic',
     'author':'Mithun Turubudi',
     'sequence': 15,
