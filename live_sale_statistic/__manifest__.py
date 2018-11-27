@@ -4,6 +4,7 @@
     'version' : '1.2',
     'summary': 'Live Sale Statistic',
     'author':'Mithun Turubudi',
+    'license': 'OPL-1',
     'sequence': 15,
     'description': """
 Live Sale Statistic
